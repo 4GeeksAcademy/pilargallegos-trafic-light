@@ -13,8 +13,10 @@ export function TrafficLight() {
         const nextIndex = (currentIndex + 1) % colors.length;
         setActiveColor(colors[nextIndex]);
     };
-    const togglePurple = () => { const isPurplePresent = colors.includes("purple"); 
-        alert(isPurplePresent ? "New color deleted!" : "New color added!");  setColors(prevColors => isPurplePresent ? prevColors.filter(color => color !== "purple") : [...prevColors, "purple"] ); };
+    const togglePurple = () => {
+        const isPurplePresent = colors.includes("purple");
+        alert(isPurplePresent ? "New color deleted!" : "New color added!"); setColors(prevColors => isPurplePresent ? prevColors.filter(color => color !== "purple") : [...prevColors, "purple"]);
+    };
     return (
         <>
             <container style={{

@@ -15,5 +15,4 @@ export function Button ({onClick, children}){
             {children}
           </button>
     )
-
 }
